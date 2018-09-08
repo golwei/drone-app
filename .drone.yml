@@ -5,6 +5,9 @@ workspace:
 pipeline:
   build:
     image: golang:latest
+    ports:
+      - 8080:8080
+
     commands:
       - go get ./...
       - go build
