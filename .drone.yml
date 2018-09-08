@@ -1,7 +1,8 @@
 workspace:
   base: /go
   path: src/github.com/golwei/drone-app
-
+  
+  
 pipeline:
   build:
     image: golang:latest
