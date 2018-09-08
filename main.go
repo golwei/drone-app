@@ -1,5 +1,7 @@
 package main
-func main(){
-println("hello drone~")
-  println("hello drone2")
+
+import "github.com/astaxie/beego"
+
+func main() {
+    beego.Run()
 }
