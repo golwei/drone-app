@@ -5,8 +5,6 @@ workspace:
 pipeline:
   build:
     image: golang:latest
-    volumes:
-      - ~/:/go/src/github.com/golwei/drone-app
     commands:
       - go get ./...
       - go build
