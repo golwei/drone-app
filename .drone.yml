@@ -5,9 +5,8 @@ workspace:
 pipeline:
   build:
     image: golang:latest
-    ports:
-      - 8080:8080
-
+    volumes:
+      - /root/apps:/go/src/github.com/golwei/drone-app
     commands:
       - go get ./...
       - go build
