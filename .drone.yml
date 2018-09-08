@@ -6,7 +6,7 @@ pipeline:
   build:
     image: golang:latest
     volumes:
-      - /root/apps:/go/src/github.com/golwei/drone-app
+      - /tmp/apps:/go/src/github.com/golwei/drone-app
     commands:
       - go get ./...
       - go build
