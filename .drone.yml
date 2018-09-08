@@ -2,16 +2,15 @@ workspace:
   base: /go
   path: src/github.com/golwei/drone-app
   
-  
 pipeline:
   build:
     image: golang:latest
     commands:
       - go get ./...
       - go build
-    publish:
-      image: plugins/docker
-      ports:
-        - 8080:8080
-      commands:
-        - ./drone-app
+publish:
+    image: plugins/docker
+    ports:
+      - 8080:8080
+    commands:
+      - ./drone-app
