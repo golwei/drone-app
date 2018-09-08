@@ -8,4 +8,9 @@ pipeline:
     commands:
       - go get ./...
       - go build
-      - ./drone-app
+    publish:
+      image: plugins/docker
+      ports:
+        - 8080:8080
+      commands:
+        - ./drone-app
