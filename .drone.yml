@@ -10,5 +10,6 @@ pipeline:
       - go build
 publish:
     image: plugins/docker
-    repo: golwei/droneapp
-    dockerfile: ~/Dockerfile
+    username: golwei
+    password: 654654
+    repo: golwei/droneapptest
