@@ -8,8 +8,10 @@ pipeline:
     commands:
       - go get ./...
       - go build
-publish:
+  docker:
     image: plugins/docker
-    registry: https://index.docker.io/v1/
-    repo: golwei/droneapptest
+    username: golwei
+    password: 654654
+    repo: golwei/bar
+    tags: latest
     
