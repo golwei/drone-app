@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY drone-app /
+COPY ./* /
 
 WORKDIR /
 
