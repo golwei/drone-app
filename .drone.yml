@@ -11,6 +11,3 @@ pipeline:
 publish:
     image: plugins/docker
     repo: golwei/droneapp
-    when:
-      event: deployment
-      environment: production
