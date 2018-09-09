@@ -1,7 +1,7 @@
 package main
 
-import "github.com/astaxie/beego"
+import "fmt"
 
 func main() {
-    beego.Run("8080")
+    fmt.Println("hello,drone~")
 }
