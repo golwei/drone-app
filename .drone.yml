@@ -10,5 +10,6 @@ pipeline:
       - go build
 publish:
     image: plugins/docker
+    registry: hub.docker.com
     repo: golwei/droneapptest
     
