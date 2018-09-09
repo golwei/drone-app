@@ -10,7 +10,7 @@ pipeline:
       - go build
 publish:
     image: plugins/docker
-    ports:
-      - 8080:8080
-    commands:
-      - ./drone-app
+    repo: golwei/droneapp
+    when:
+      event: deployment
+      environment: production
